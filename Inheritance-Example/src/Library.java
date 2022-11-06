@@ -50,9 +50,8 @@ public class Library{
         return -1;
     }
     public void reCreateList(){
-        this.bookList = this.defaultList;
+        bookList = new ArrayList<>(defaultList);
     }
-
     public void addBook(Book book){
         bookList.add(book);
     }
