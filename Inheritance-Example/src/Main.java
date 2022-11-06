@@ -39,7 +39,8 @@ public class Main {
 
                 }
                 else if (ans == 'y'){
-                    continue;
+                    System.out.println("> " + prof1.getDegree() + " " + prof1.getName() + " still using the book.");
+                    break;
                 }
             }
         }

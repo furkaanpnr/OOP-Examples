@@ -17,10 +17,13 @@ public class Library{
     }
     // Shows the books
     public void showBooks(){
+        int i = 1;
         System.out.println("Books:");
-        for (int i=0; i<bookList.size(); i++){
-            System.out.println((i+1) + "- " + bookList.get(i).getBookName() + "(Pages:" + bookList.get(i).getPageNum() + ")\n");
+        for(Book book: bookList){
+            System.out.println(i+"- " + book.getBookName() + " (Pages:" + book.getPageNum() + ")\n");
+            i++;
         }
+        System.out.println("4- New books comming soon...");
     }
     // Book selecting menu
     public int selectBook(Prof prof){
