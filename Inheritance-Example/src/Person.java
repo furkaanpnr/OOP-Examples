@@ -10,8 +10,8 @@ abstract class Person {
     }
 
     // Reads the selected book
-    public void read(Book[] books,int index){
-        System.out.print(" reading" + " " + books[index].getBookName());
+    public void read(Book book){
+        System.out.print(" reading" + " " + book.getBookName());
     }
 
     public void listen(){
