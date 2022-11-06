@@ -37,10 +37,17 @@ public class Main {
                     ans = sc.next().charAt(0);
                     if (ans == 'n') break;
                     else if (ans == 'y') continue;
-
+                    else{
+                        System.out.println("Wrong entry, program terminated!");
+                        break;
+                    }
                 }
                 else if (ans == 'y'){
                     System.out.println("> " + prof1.getDegree() + " " + prof1.getName() + " still using the book.");
+                    break;
+                }
+                else{
+                    System.out.println("Wrong entry, program terminated!");
                     break;
                 }
             }
