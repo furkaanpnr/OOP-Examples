@@ -32,6 +32,7 @@ public class Main {
                 ans = sc.next().charAt(0);
                 if(ans == 'n'){
                     lib.addBook(book);//the book was returned
+                    lib.reCreateList();
                     System.out.println("Will the professor choose another book? (y or n)>>");
                     ans = sc.next().charAt(0);
                     if (ans == 'n') break;

@@ -9,11 +9,15 @@ public class Library{
     private Book b2 = new Book("C Programming Book", 300);
     private Book b3 = new Book("OOP Book", 500);
     private List<Book> bookList = new ArrayList<Book>();
+    private List<Book> defaultList = new ArrayList<Book>();
     public Library(String libraryName){
         this.libraryName = libraryName;
         bookList.add(this.b1);
         bookList.add(this.b2);
         bookList.add(this.b3);
+        defaultList.add(this.b1);
+        defaultList.add(this.b2);
+        defaultList.add(this.b3);
     }
     // Shows the books
     public void showBooks(){
@@ -44,6 +48,9 @@ public class Library{
                 break;
         }
         return -1;
+    }
+    public void reCreateList(){
+        this.bookList = this.defaultList;
     }
 
     public void addBook(Book book){
