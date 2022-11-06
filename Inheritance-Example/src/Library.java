@@ -49,7 +49,7 @@ public class Library{
     public void delBook(int index){
         bookList.remove(index);
     }
-    public Book getBookByName(int index){
+    public Book getBook(int index){
        return bookList.get(index);
     }
 
